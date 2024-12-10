@@ -17,7 +17,7 @@
         }
 
         .image::before {
-            content: '';
+            content: ''; 
             position: absolute;
             top: 0;
             left: 0;
@@ -37,12 +37,14 @@
     <!-- Wrapper Div with Background Image -->
     <div class="image z-0 min-h-screen w-full flex-wrap md:flex-row flex-col justify-center items-center">
         <!-- Main Content Container -->
-        <div class="relative flex flex-col md:flex-row items-center min-h-screen mx-auto md:justify-between w-full max-w-5xl p-4 md:p-8">
+        <div class="relative flex flex-col md:flex-row items-center min-h-screen mx-auto md:justify-between w-full max-w-5xl p-8 md:p-8">
             <!-- Left Section -->
             <div class="w-full md:w-1/2 text-white mb-6 md:mb-0 space-y-6">
                 <div class="text-4xl font-semibold md:absolute md:top-32"><img src="./assets/Logo.png" alt=""></div>
-                <h1 class="text-4xl font-bold">Login into your account</h1>
-                <p class="text-lg">Let us make the circle bigger!</p>
+                <div>
+                    <h1 class="md:text-4xl text-3xl font-bold mb-0 md:mb-4">Login into your account</h1>
+                    <p class="text-lg">Let us make the circle bigger!</p>
+                </div>
             </div>
 
             <!-- Right Section -->
@@ -76,7 +78,7 @@
             </div>
         </div>
     </div>
-    <footer class="text-center absolute bottom-4 text-gray-500 text-sm">
+    <footer class="text-center hidden md:block absolute bottom-4 text-gray-500 text-sm">
         © 2023 Circles. All Rights Reserved.
     </footer>
     <!-- Footer -->
